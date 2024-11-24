@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f7f7f7; /* Light background for better contrast */
+            /* background-color: #f7f7f7; Light background for better contrast */
             margin: 0; /* Reset default margins */
             padding: 0; /* Reset default padding */
         }
@@ -23,18 +23,19 @@
             padding: 12px 15px;
             text-align: left;
             border-bottom: 1px solid #ddd;
+            color: #fff;
         }
 
         th {
-            background-color: #007bff; /* Bootstrap Primary */
+    /* Bootstrap Primary */
             color: white;
             font-weight: bold;
         }
 
         tr:hover {
-            background-color: #f1f1f1; /* Light gray for hover */
+            background-color: #656363; 
         }
-
+       
         img {
             border-radius: 50%; /* Round images */
             max-width: 80px; /* Set a max width */
@@ -45,8 +46,8 @@
             display: inline-block;
             padding: 5px 10px;
             border: none;
-            color: white;
-            background-color: #007BFF; /* Bootstrap primary color */
+            color: black;
+            background-color: #fcf5f5; /* Bootstrap primary color */
             text-decoration: none;
             border-radius: 4px;
         }
@@ -64,26 +65,26 @@
         }
     </style>
 </head>
-<body>
+<body class="bg-gray-800">
         <!-- <%- include('partials/navbar', { page: '' }) %> -->
         <%- include('partials/navbar', { page: '/lego/sets' }) %>
 
 
 
         <!-- Hero Section for 404 -->
-        <section class="hero">
+        <section class="hero mt-4">
             <h1 class="text-3xl font-bold">Lego Collection</h1>
-            <div class="filter-links">
-                <a href="/lego/sets?theme=Technic" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Technic</a>
-                <a href="/lego/sets?theme=Classic" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Classic</a>
-                <a href="/lego/sets?theme=Town" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Town</a>
+            <div class="filter-links mt-3">
+                <a href="/lego/sets?theme=Technic" class="bg-gray-200 text-black px-4 py-2 rounded hover:bg-gray-400">Technic</a>
+                <a href="/lego/sets?theme=Classic" class="bg-gray-200 text-black px-4 py-2 rounded hover:bg-gray-400-600">Classic</a>
+                <a href="/lego/sets?theme=Town" class="bg-gray-200 text-black px-4 py-2 rounded hover:bg-gray-400">Town</a>
               
             </div>
         </section>
         
     
         <table class="table-auto w-full border">
-            <thead>
+            <thead class="bg-gray-50">
                 <tr>
                     <th>Image</th>
                     <th>Name</th>

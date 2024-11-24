@@ -6,7 +6,7 @@
     <title>Lego Collection</title>
     <link href="/css/main.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 min-h-screen flex flex-col">
+<body class="bg-gray-800 text-color-gray-200 min-h-screen flex flex-col">
 
     <!-- Navbar (Using partial include) -->
     <%- include('partials/navbar', { page: '/' }) %>
@@ -36,7 +36,7 @@
         <div class="text-center bg-gray-200 p-10 rounded-lg">
         <h1 class="text-5xl font-bold">Welcome the Lego Collection</h1>
         <p class="mt-4 text-lg">See our beauty of Lego sets and themes.</p>
-        <a href="/lego/sets" class="btn btn-primary mt-6 bg-white text-blue-500 rounded-lg px-4 py-2">View Sets</a>
+        <a href="/lego/sets" class="btn view_btn btn-primary mt-6 bg-white text-black rounded-lg px-4 py-2">View Sets</a>
     </section>
 
     <!-- Lego Sets Cards -->
@@ -47,7 +47,7 @@
             <div class="p-4">
                 <h2 class="text-xl font-bold">Lego Set Name 1</h2>
                 <p class="mt-2">It's part of the Technic theme of Lego Set 1.</p>
-                <a href="/lego/sets/31090-1" class="mt-4 inline-block bg-blue-500 text-white rounded-lg px-4 py-2 hover:bg-blue-600 transition">
+                <a href="/lego/sets/31090-1" class="mt-4 inline-block bg-gray-200 link_btn text-black rounded-lg px-4 py-2 hover:bg-gray-300 transition">
                     View Details
                 </a>
             </div>
@@ -59,7 +59,7 @@
             <div class="p-4">
                 <h2 class="text-xl font-bold">Lego Set Name 2</h2>
                 <p class="mt-2">It's part of the Marvel Avengers theme of Lego Set 2.</p>
-                <a href="/lego/sets/1000565740-1" class="mt-4 inline-block bg-blue-500 text-white rounded-lg px-4 py-2 hover:bg-blue-600 transition">
+                <a href="/lego/sets/1000565740-1" class="mt-4 inline-block bg-white link_btn text-black rounded-lg px-4 py-2 hover:bg-white transition">
                     View Details
                 </a>
             </div>
@@ -71,7 +71,7 @@
                 <div class="p-4">
                     <h2 class="text-xl font-bold">Lego Set Name 3</h2>
                     <p class="mt-2">It's part of the City theme of Lego Set 3.</p>
-                    <a href="/lego/sets/31097-1" class="mt-4 inline-block bg-blue-500 text-white rounded-lg px-4 py-2 hover:bg-blue-600 transition">
+                    <a href="/lego/sets/31097-1" class="mt-4 inline-block bg-white link_btn text-black rounded-lg px-4 py-2 hover:bg-gray-300 transition">
                         View Details
                     </a>
                 </div>

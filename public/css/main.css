@@ -219,7 +219,7 @@ Reset links to optimize for opt-in styling instead of opt-out.
 */
 
 a {
-  color: inherit;
+  /* color: inherit; */
   text-decoration: inherit;
 }
 
@@ -1229,16 +1229,16 @@ html {
 }
 
 .btn:focus-visible {
-  outline-style: solid;
+  /* outline-style: solid; */
   outline-width: 2px;
   outline-offset: 2px;
 }
 
-.btn-primary {
+/* .btn-primary {
   --tw-text-opacity: 1;
   color: var(--fallback-pc,oklch(var(--pc)/var(--tw-text-opacity)));
   outline-color: var(--fallback-p,oklch(var(--p)/1));
-}
+} */
 
 @supports (color: oklch(0% 0 0)) {
   .btn-primary {
@@ -1311,6 +1311,8 @@ html {
 .btn:is(input[type="checkbox"]:checked):focus-visible, .btn:is(input[type="radio"]:checked):focus-visible {
   outline-color: var(--fallback-p,oklch(var(--p)/1));
 }
+
+
 
 @keyframes button-pop {
   0% {
@@ -1781,8 +1783,12 @@ details.collapse summary::-webkit-details-marker {
   height: auto;
 }
 
-.min-h-screen {
+/* .min-h-screen {
   min-height: 100vh;
+} */
+
+li {
+  list-style: none;
 }
 
 .w-full {
@@ -2069,4 +2075,50 @@ details.collapse summary::-webkit-details-marker {
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+}
+
+
+.view_btn:hover{
+  background-color: white;
+  box-shadow: 1px 1px -1px #000;
+}
+
+.link_btn{
+  background-color: #fff;
+  color:#000
+}
+
+.link_btn:hover{
+  background-color: #a8a3a3;
+  color: #fdf5f5;
+}
+
+.owner_name{
+  color:#ccc9c9
+}
+
+.menu {
+  position: relative;
+  display: inline-block;
+  color: #f3ebeb;
+  text-decoration: none; /* Prevent the default underline */
+  transition: color 0.3s linear; /* Smooth color change */
+}
+
+.menu::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  transition: width 0.5s linear; /* Smooth underline growth */
+}
+
+.menu:hover {
+  color: rgb(101, 98, 98); /* Change text color on hover */
+}
+
+.menu:hover::after {
+  width: 100%; /* Expand the underline */
 }
